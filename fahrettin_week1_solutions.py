@@ -167,7 +167,7 @@ print("The largest number is:", sorted(num_list)[-1])
 
 print("\n-------------------------")
 
-#Soru 11
+#Soru 12:
 courses = ["Math", "Physics", "Chemistry", "Biology"] 
 
 for i in courses:
