@@ -91,5 +91,10 @@ print(f"Fibonacci sequence up to {limit} is: {fibonacci_list}")
 print("\n-------------------------")
 
 #Soru 8:
+word = input("Enter a word: ")
+reversed_word = ""
+for letter in word:
+    reversed_word = letter + reversed_word
 
+print("Reversed word is", reversed_word)
 
