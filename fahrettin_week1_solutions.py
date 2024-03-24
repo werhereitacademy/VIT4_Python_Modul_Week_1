@@ -95,6 +95,89 @@ word = input("Enter a word: ")
 reversed_word = ""
 for letter in word:
     reversed_word = letter + reversed_word
-
 print("Reversed word is", reversed_word)
 
+print("\n-------------------------")
+
+#Soru 9:
+word = input("Enter a word: ")
+first_index = 0
+last_index = -1
+is_polindrome = True
+
+while first_index < len(word) / 2:
+    if word[first_index] != word[last_index]:
+        is_palindrome = False
+        break
+    
+    first_index += 1
+    last_index -= 1
+
+if is_palindrome:
+    print(word, "is polindrome")
+else:
+    print(word, "is not polindrome")
+
+# or in short  
+if word == word[::-1]: 
+    print(word, "is polindrome") 
+else:
+    print(word, "is not polindrome")
+
+print("\n-------------------------")
+
+#Soru 10:
+height = float(input("Your height in meter: "))
+weight = float(input("Your weight in kilograms: "))
+# BMI(Body Mass Index)
+bmi = ((weight * 10) // height ** 2) / 10  # to display only two decimal places
+
+if bmi < 25:
+    category = "underweight"
+elif bmi < 30:
+    category = "normal"
+elif bmi < 40:
+    category = "overweight"
+else:
+    category = "obese"
+
+print(f"Your body mass index is {bmi}  You are {category}")
+
+print("\n-------------------------")
+
+#Soru 11
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+largest_num = num1
+if num2 > largest_num:
+    largest_num = num2
+
+if num3 >largest_num:
+    largest_num = num3
+
+print("The largest number is:", largest_num)
+
+# or
+num_list = [num1, num2, num3]
+print("The largest number is:", max(*num_list))
+print("The largest number is:", max(i for i in num_list))
+print("The largest number is:", sorted(num_list)[-1])
+
+print("\n-------------------------")
+
+#Soru 11
+courses = ["Math", "Physics", "Chemistry", "Biology"] 
+
+for i in courses:
+    print("For the course", i)
+    midterm = int(input("Enter the midterm score: "))
+    final = int(input("Enter the final score: "))
+
+    average = midterm * 0.4 + final * 0.6
+
+    if average < 50:
+        print("Fail")
+    else:
+        print("Pass")
