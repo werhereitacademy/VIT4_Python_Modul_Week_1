@@ -1,0 +1,97 @@
+VIT4_Python_Modul_Week_1
+
+Soru 1 : 1'den 10'a kadar olan sayıları ekrana yazdıran bir Python kodu yazınız.
+#Cevap_1
+for i in range(1, 11):
+    print(i)
+
+Soru 2 : Kullanıcıdan bir sayı girişi alın ve bu sayıya kadar olan çift sayıları ekrana yazdıran bir Python programı yazın. Bunu once 'for' ile sonra 'while' donguleri ile yapiniz.
+#Cevap_2 for dongulu
+sayi = int(input("Bir sayı girin: "))
+print("For dongulu cift sayilar:")
+for i in range(2, sayi + 1, 2):
+    print(i)
+
+#Cevap_2 while dongulu
+sayi = int(input("Bir sayı girin: "))
+print("While dongulu cift sayilar:")
+ciftsayi = 2
+while ciftsayi <= sayi:
+    print(ciftsayi)
+    ciftsayi += 2
+
+
+Soru 3 : Kullanıcıdan bir başlangıç ve bitiş değeri alan ve bu değerler arasındaki tüm sayıları ekrana yazdıran bir Python kodu yazınız(bitis degeri dahil).
+#Cevap_3
+baslangic = int(input("Başlangıç değerini giriniz: "))
+bitis = int(input("Bitiş değerini giriniz: "))
+
+print(f"{baslangic} ile {bitis} arasındaki tüm sayılar:")
+for i in range(baslangic, bitis + 1):
+    print(i, end=" ")
+
+Soru 4 : Kullanıcıdan bir sayı alın ve bu sayının tek mi çift mi olduğunu ekrana yazdıran bir Python kodu yazınız.
+#Cevap_4
+sayi = int(input("Bir sayı girin: "))
+if sayi % 2 == 0:
+    print(f"{sayi} bir çift sayıdır.")
+else:
+    print(f"{sayi} bir tek sayıdır.")
+
+
+Soru 5 : Kullanıcıdan pozitif bir tam sayı girişi alın ve faktöriyelini hesaplayan bir Python programı yazın. Faktöriyel, bir sayının kendisi ile 1 arasındaki tüm pozitif tam sayıların çarpımıdır. Örneğin: kullanıcı 5 girdiyse program şu çıktıyı vermeli: Kullanıcıdan bir sayı girin: 5 Faktöriyel: 120
+#Cevap_5
+sayi = int(input("Bir sayi girin: "))
+faktoriyel = 1
+
+if sayi < 0:
+    print("Negatif sayi girdiniz!.")
+elif sayi == 0:
+    print("Faktöriyel: 1")
+else:
+    for i in range(1, sayi + 1):
+        faktoriyel *= i
+    print("Faktöriyel:", faktoriyel)
+
+
+
+Soru 6 : Kullanıcıdan bir sayı alan ve bu sayının asal olup olmadığını kontrol eden bir Python kodu yazınız.
+#Cevap_6
+
+
+Soru 7 : Fibonacci dizisini hesaplayan ve sonucu belirli bir sınıra kadar olan sayıları içeren bir liste olarak döndüren bir döngü nasıl oluşturulur?
+#Cevap_7
+
+
+Soru 8 : Kullanıcıdan bir kelime alan ve bu kelimenin tersini ekrana yazdıran bir Python kodu yazınız.
+#Cevap_8
+
+
+Soru 9 : Kullanıcıdan bir kelime girişi alan ve bu kelimenin palindrom (tersten okunduğunda aynı olan) olup olmadığını kontrol eden bir döngü ve koşullu ifade kombinasyonu nasıl oluşturulur?
+#Cevap_9
+
+
+
+Soru 10 : Kişinin kilo indeksini hesaplayıp indeks değerine göre zayıf, kilolu veya fazla kilolu olarak sonuç döndüren kodu yazınız.(kilo indeks hesabı için internete bakabilirsiniz) Bunun için kullanıcıdan kilo ve boy ölçülerini isteyiniz. Kilo indeksi 25’in altında ise zayıf, 25-30 arasında ise normal, 30-40dan büyük ise kilolu, 40tan büyük ise aşırı kilolu sonuçlarına varsın.
+#Cevap_10
+
+
+
+Soru 11 : Bir kullanıcının girdiği üç sayının en büyüğünü bulan bir Python programı nasıl yazılır?
+#Cevap_11
+sayi1 = int(input("Birinci sayı: "))
+sayi2 = int(input("İkinci sayı: "))
+sayi3 = int(input("Üçüncü sayı: "))
+
+en_buyuk = sayi1
+if sayi2 > en_buyuk:
+    en_buyuk = sayi2
+if sayi3 > en_buyuk:
+    en_buyuk = sayi3
+print("En büyük sayı:", en_buyuk)
+
+
+Soru 12 : Bir ogrenciden herhangi bir ders icin Vize ve Final notlarıni alin. Ara sınav notunun %40'ı ile final notunun %60'ının toplamı yıl sonu ortalamasını verecektir. Ortalama 50'nin altında ise ekranda “BAŞARISIZ”, 50 ve üzerinde ise “BAŞARILI” çıktısı ekrana gelecektir. Bu baskı işlemi 4 derstir. yapılacak ve dersler birbiri ardına yazılacaktır.
+#Cevap_12
+
+
