@@ -3,8 +3,25 @@
 #Soru 2:
 
 #Soru 3:
+num1= int(input("Please enter the first nummer:"))
+num2= int(input("Please enter the second nummer:"))
+
+between_num=[]
+
+for cifer in range(num1,num2+1):
+    if cifer >= num1 and cifer<=num2:
+
+        between_num.append(cifer)
+
+print("Between Nummer 1 and Nummer 2 :", between_num)
 
 #Soru 4:
+nummer= int(input("Please Enter A Nummer:"))
+
+if nummer %2 == 1:
+    print("The NUmmer {} is an odd nummer".format(nummer))
+else:
+    print("The Nummer {} is an even nummer".format(nummer))
 
 #Soru 5:
 
@@ -12,7 +29,12 @@
 
 #Soru 7:
 
-#Soru 8:
+#Soru 8: 
+text= input("Please enter a text:")
+
+new_words= text[::-1]
+
+print(new_words)
 
 #Soru 9:
 text = input("Lütfen bir metin giriniz: ")
@@ -45,6 +67,7 @@ elif 40<= indeks:
     print("Aşırı Kilolu")
 
 #Soru 11:
+
 
 #Soru 12:
 for i in range(1,5):
