@@ -1,0 +1,7 @@
+#Soru 1:
+sayilar=[]
+
+for rakam in range(1,10):
+    sayilar.append(rakam)
+
+print("1'den 10'a kadar olan sayılar:",sayilar)
