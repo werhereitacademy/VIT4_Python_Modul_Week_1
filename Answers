@@ -1,7 +1,23 @@
 #Soru 1:
-sayilar=[]
 
-for rakam in range(1,10):
-    sayilar.append(rakam)
+#Soru 2:
 
-print("1'den 10'a kadar olan sayılar:",sayilar)
+#Soru 3:
+
+#Soru 4:
+
+#Soru 5:
+
+#Soru 6:
+
+#Soru 7:
+
+#Soru 8:
+
+#Soru 9:
+
+#Soru 10:
+
+#Soru 11:
+
+#Soru 12:
