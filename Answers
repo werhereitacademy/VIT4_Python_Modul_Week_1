@@ -3,6 +3,7 @@ for i in range(1, 11):
     print(i)
 
 
+
  #Soru 2:
 sayi = int(input("Bir sayı girin: "))
 
