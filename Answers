@@ -1,6 +1,22 @@
-#Soru 1 :
+#Soru 1:
 
-#Soru 2:
+for i in range(1, 11):
+
+
+ #Soru 2:
+sayi = int(input("Bir sayı girin: "))
+
+print("for döngüsü ile çift sayılar:")
+for i in range(2, sayi + 1, 2):
+    print(i)
+
+sayi = int(input("Bir sayı girin: "))
+
+print("while döngüsü ile çift sayılar:")
+i = 2
+while i <= sayi:
+    print(i)
+    i += 2
 
 #Soru 3:
 num1= int(input("Please enter the first nummer:"))
@@ -95,6 +111,19 @@ elif 40<= indeks:
     print("Aşırı Kilolu")
 
 #Soru 11:
+sayi1 = float(input("Birinci sayıyı girin: "))
+sayi2 = float(input("İkinci sayıyı girin: "))
+sayi3 = float(input("Üçüncü sayıyı girin: "))
+
+en_buyuk = sayi1
+
+if sayi2 > en_buyuk:
+    en_buyuk = sayi2
+
+if sayi3 > en_buyuk:
+    en_buyuk = sayi3
+
+print("En büyük sayı:", en_buyuk)
 
 
 #Soru 12:
