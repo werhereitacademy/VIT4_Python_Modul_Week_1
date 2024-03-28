@@ -1,0 +1,145 @@
+#Soru 1:
+for i in range(1, 11):
+    print(i)
+
+
+
+ #Soru 2:
+sayi = int(input("Bir sayı girin: "))
+
+print("for döngüsü ile çift sayılar:")
+for i in range(2, sayi + 1, 2):
+    print(i)
+
+sayi = int(input("Bir sayı girin: "))
+
+print("while döngüsü ile çift sayılar:")
+i = 2
+while i <= sayi:
+    print(i)
+    i += 2
+
+#Soru 3:
+num1= int(input("Please enter the first nummer:"))
+num2= int(input("Please enter the second nummer:"))
+
+between_num=[]
+
+for cifer in range(num1,num2+1):
+    if cifer >= num1 and cifer<=num2:
+
+        between_num.append(cifer)
+
+print("Between Nummer 1 and Nummer 2 :", between_num)
+
+#Soru 4:
+nummer= int(input("Please Enter A Nummer:"))
+
+if nummer %2 == 1:
+    print("The NUmmer {} is an odd nummer".format(nummer))
+else:
+    print("The Nummer {} is an even nummer".format(nummer))
+
+#Soru 5:
+    
+sayi = int(input("pozitif tam sayi giriniz:"))
+
+x=1
+
+for i in range (1,sayi+1):
+    x *= i
+
+print(f"Faktoriyel = {x} ")
+
+
+#Soru 6:
+sayi = int(input("bir sayi giriniz: "))
+
+for i in range(2,sayi):
+    if sayi % i == 0 :
+        print(f"{sayi} sayisi asal degildir")
+        break
+else:
+    print(f"{sayi} asal bir sayidir.")
+
+#Soru 7:
+
+sinirsayisi= int(input("Fibonacci dizisindeki sonsayiyi belirleyin: "))
+
+fibonacci = [0, 1]
+while fibonacci[-1] + fibonacci[-2] <= sinirsayisi:
+    sonrakisayi = fibonacci[-1] + fibonacci[-2]
+    fibonacci.append(sonrakisayi)
+
+print(f"Fibonacci dizisi sinirsayisi {sinirsayisi}:")
+print(fibonacci)
+
+#Soru 8: 
+text= input("Please enter a text:")
+
+new_words= text[::-1]
+
+print(new_words)
+
+#Soru 9:
+text = input("Lütfen bir metin giriniz: ")
+
+
+new_text = "".join(word[::-1] for word in text)
+
+print("Bu metnin tersi:", new_text)
+
+if text.lower() == new_text.lower():
+    print("Bu metin bir palindromdur.")
+else:
+    print("Bu metin bir palindrom değildir.")
+
+#Soru 10:
+weight= int(input("Please enter your weight(kg):"))
+height=int(input("Please enter your height(cm):"))
+
+indeks= weight/(height/100)**2
+indeks=round(indeks,2)
+print(indeks)
+
+if indeks <25 :
+    print("zayıf")
+elif 25<=indeks<30:
+    print("Normal")
+elif 30<=indeks<40:
+    print("Kilolu")
+elif 40<= indeks:
+    print("Aşırı Kilolu")
+
+#Soru 11:
+sayi1 = float(input("Birinci sayıyı girin: "))
+sayi2 = float(input("İkinci sayıyı girin: "))
+sayi3 = float(input("Üçüncü sayıyı girin: "))
+
+en_buyuk = sayi1
+
+if sayi2 > en_buyuk:
+    en_buyuk = sayi2
+
+if sayi3 > en_buyuk:
+    en_buyuk = sayi3
+
+print("En büyük sayı:", en_buyuk)
+
+
+#Soru 12:
+for i in range(1,5):
+    print(f" {i}. Ders için notları giriniz!")
+    vize_notu= float(input("Vize Notunu Giriniz:"))
+    final_notu=float(input("Final Notunu Giriniz:"))
+    ortalama= vize_notu*0.4 + final_notu*0.6
+
+    if 50 <= ortalama <= 100:
+        print(f" {i}. Ders Not Ortalaması. {ortalama} - BAŞARILI")
+        print("*"*115)
+    elif 0<= ortalama <50 :
+        print(f" {i}. Ders Not Ortalaması: {ortalama} - BAŞARISIZ")
+        print("*" * 115)
+    else:
+        print("Yanlış Değer Girdiniz Lütfen Tekrar Giriniz.")
+        print("*" * 115)
