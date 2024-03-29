@@ -1,27 +1,35 @@
 VIT4_Python_Modul_Week_1
 
-Soru 1 : 1'den 10'a kadar olan sayıları ekrana yazdıran bir Python kodu yazınız.
+#Soru 1 : 1'den 10'a kadar olan sayıları ekrana yazdıran bir Python kodu yazınız.
 #Cevap_1
 for i in range(1, 11):
     print(i)
 
-Soru 2 : Kullanıcıdan bir sayı girişi alın ve bu sayıya kadar olan çift sayıları ekrana yazdıran bir Python programı yazın. Bunu once 'for' ile sonra 'while' donguleri ile yapiniz.
+
+
+
+
+
+#Soru 2 : Kullanıcıdan bir sayı girişi alın ve bu sayıya kadar olan çift sayıları ekrana yazdıran bir Python programı yazın. Bunu once 'for' ile sonra 'while' donguleri ile yapiniz.
 #Cevap_2 for dongulu
 sayi = int(input("Bir sayı girin: "))
 print("For dongulu cift sayilar:")
-for i in range(2, sayi + 1, 2):
+for i in range(0, sayi + 1, 2):
     print(i)
 
 #Cevap_2 while dongulu
 sayi = int(input("Bir sayı girin: "))
 print("While dongulu cift sayilar:")
-ciftsayi = 2
+ciftsayi = 0
 while ciftsayi <= sayi:
     print(ciftsayi)
     ciftsayi += 2
 
 
-Soru 3 : Kullanıcıdan bir başlangıç ve bitiş değeri alan ve bu değerler arasındaki tüm sayıları ekrana yazdıran bir Python kodu yazınız(bitis degeri dahil).
+
+
+
+#Soru 3 : Kullanıcıdan bir başlangıç ve bitiş değeri alan ve bu değerler arasındaki tüm sayıları ekrana yazdıran bir Python kodu yazınız(bitis degeri dahil).
 #Cevap_3
 baslangic = int(input("Başlangıç değerini giriniz: "))
 bitis = int(input("Bitiş değerini giriniz: "))
@@ -30,7 +38,14 @@ print(f"{baslangic} ile {bitis} arasındaki tüm sayılar:")
 for i in range(baslangic, bitis + 1):
     print(i, end=" ")
 
-Soru 4 : Kullanıcıdan bir sayı alın ve bu sayının tek mi çift mi olduğunu ekrana yazdıran bir Python kodu yazınız.
+
+
+
+
+
+
+
+#Soru 4 : Kullanıcıdan bir sayı alın ve bu sayının tek mi çift mi olduğunu ekrana yazdıran bir Python kodu yazınız.
 #Cevap_4
 sayi = int(input("Bir sayı girin: "))
 if sayi % 2 == 0:
@@ -39,7 +54,11 @@ else:
     print(f"{sayi} bir tek sayıdır.")
 
 
-Soru 5 : Kullanıcıdan pozitif bir tam sayı girişi alın ve faktöriyelini hesaplayan bir Python programı yazın. Faktöriyel, bir sayının kendisi ile 1 arasındaki tüm pozitif tam sayıların çarpımıdır. Örneğin: kullanıcı 5 girdiyse program şu çıktıyı vermeli: Kullanıcıdan bir sayı girin: 5 Faktöriyel: 120
+
+
+
+
+#Soru 5 : Kullanıcıdan pozitif bir tam sayı girişi alın ve faktöriyelini hesaplayan bir Python programı yazın. Faktöriyel, bir sayının kendisi ile 1 arasındaki tüm pozitif tam sayıların çarpımıdır. Örneğin: kullanıcı 5 girdiyse program şu çıktıyı vermeli: Kullanıcıdan bir sayı girin: 5 Faktöriyel: 120
 #Cevap_5
 sayi = int(input("Bir sayi girin: "))
 faktoriyel = 1
@@ -51,16 +70,46 @@ elif sayi == 0:
 else:
     for i in range(1, sayi + 1):
         faktoriyel *= i
-    print("Faktöriyel:", faktoriyel)
+    print(f"{sayi} Faktöriyel:", faktoriyel)
 
 
 
-Soru 6 : Kullanıcıdan bir sayı alan ve bu sayının asal olup olmadığını kontrol eden bir Python kodu yazınız.
+
+
+
+#Soru 6 : Kullanıcıdan bir sayı alan ve bu sayının asal olup olmadığını kontrol eden bir Python kodu yazınız.
 #Cevap_6
+x=int(input("Lutfen pozitif bir tamsayi giriniz:"))
+
+if x < 2:
+   print(f"{x} asal bir sayi değildir.")
+else:
+   asal_mi = True
+   for i in range(2, int(x ** 0.5) + 1):
+       if x % i == 0:
+           asal_mi = False
+           break
+
+   if asal_mi:
+       print(f"{x} asal bir sayidir.")
+   else:
+       print(f"{x} asal bir sayi değildir.")
 
 
-Soru 7 : Fibonacci dizisini hesaplayan ve sonucu belirli bir sınıra kadar olan sayıları içeren bir liste olarak döndüren bir döngü nasıl oluşturulur?
+
+
+#Soru 7 : Fibonacci dizisini hesaplayan ve sonucu belirli bir sınıra kadar olan sayıları içeren bir liste olarak döndüren bir döngü nasıl oluşturulur?
 #Cevap_7
+sinir = int(input("Fibonacci dizisi olusturmek icin bir sinir sayisi girin: "))
+
+fibonacci = [0, 1]
+while True:
+   yeni_eleman = fibonacci[-1] + fibonacci[-2]
+   if yeni_eleman > sinir:
+       break
+   fibonacci.append(yeni_eleman)
+
+print(f"Fibonacci dizisi {sinir}'a kadar: {fibonacci}")
 
 
 Soru 8 : Kullanıcıdan bir kelime alan ve bu kelimenin tersini ekrana yazdıran bir Python kodu yazınız.
