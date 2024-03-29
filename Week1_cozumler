@@ -112,12 +112,33 @@ while True:
 print(f"Fibonacci dizisi {sinir}'a kadar: {fibonacci}")
 
 
-Soru 8 : Kullanıcıdan bir kelime alan ve bu kelimenin tersini ekrana yazdıran bir Python kodu yazınız.
+
+#Soru 8 : Kullanıcıdan bir kelime alan ve bu kelimenin tersini ekrana yazdıran bir Python kodu yazınız.
 #Cevap_8
+a = input("Bir kelime yaziniz: ")
+print(a[::-1])
 
 
-Soru 9 : Kullanıcıdan bir kelime girişi alan ve bu kelimenin palindrom (tersten okunduğunda aynı olan) olup olmadığını kontrol eden bir döngü ve koşullu ifade kombinasyonu nasıl oluşturulur?
+
+#Soru 9 : Kullanıcıdan bir kelime girişi alan ve bu kelimenin palindrom (tersten okunduğunda aynı olan) olup olmadığını
+# kontrol eden bir döngü ve koşullu ifade kombinasyonu nasıl oluşturulur?
 #Cevap_9
+kelime = input("Lütfen bir kelime giriniz: ")
+
+palindrom = True
+bas = 0
+son = len(kelime)  # Kelimenin uzunluğunu al
+while bas < (len(kelime) / 2) and palindrom:
+    if kelime[bas] != kelime[son - 1]:  # Son karaktere dikkat et
+        palindrom = False
+    bas += 1
+    son -= 1
+
+if palindrom:
+    print("Girilen kelime palindromdur.")
+else:
+    print("Girilen kelime palindrom değildir.")
+
 
 
 
