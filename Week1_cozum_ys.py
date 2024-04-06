@@ -1,5 +1,5 @@
 VIT4_Python_Modul_Week_1
-#Soru 1 : 1'den 10'a kadar olan sayıları ekrana yazdıran bir Python kodu yazınız.
+#Soru 1 : 1'den 10'a kadar olan sayıları ekrana yazdıran bir Python kodu yazınz.
 #Cevap_1
 for i in range(1, 11):
     print(i)
